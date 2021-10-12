@@ -2,9 +2,9 @@ from django.db import models
 
 class Student(models.Model):
     name = models.CharField(max_length=30)
-    rg = models.CharField(max_length=9)
-    name = models.CharField(max_length=11)
-    name = models.DateField()
+    document = models.CharField(max_length=9)
+    sex = models.CharField(max_length=11)
+    birth_date = models.DateField()
 
     def __str__(self):
         return self.name
